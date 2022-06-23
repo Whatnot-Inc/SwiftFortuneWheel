@@ -125,10 +125,7 @@ public class SwiftFortuneWheel: SFWControl {
     /// Audio player manager, used for collision effects sound
     private(set) lazy var audioPlayerManager = AudioPlayerManager()
     
-    #if os(iOS)
-    @available(iOS 10.0, iOSApplicationExtension 10.0, *)
     private(set) lazy var impactFeedbackgenerator = UIImpactFeedbackGenerator(style: .light)
-    #endif
     
     /// Spin button title
     private var _spinTitle: String? {
