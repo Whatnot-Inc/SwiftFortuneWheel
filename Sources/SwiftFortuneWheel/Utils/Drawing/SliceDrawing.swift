@@ -160,7 +160,7 @@ extension SliceDrawing {
         path.closeSubpath()
         
         if gradient == nil {
-            context.setFillColor(pathBackgroundColor!.cgColor)
+            context.setFillColor((pathBackgroundColor ?? .orange).cgColor)
         }
         
         context.addPath(path)

@@ -16,7 +16,7 @@ import UIKit
 
 extension SFWColor {
     /// Random color
-    static var random: SFWColor {
+    public static var random: SFWColor {
         return SFWColor(red: .random(in: 0...1),
                        green: .random(in: 0...1),
                        blue: .random(in: 0...1),

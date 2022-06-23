@@ -34,7 +34,7 @@ public struct Slice {
     /// - Parameter gradientColor: Background gradient color,, `optional`
     /// - Parameter backgroundImage: Background image, `optional`
     public init(contents: [ContentType],
-                backgroundColor: SFWColor? = nil,
+                backgroundColor: SFWColor? = .random,
                 gradientColor: SFGradientColor? = nil,
                 backgroundImage: SFWImage? = nil) {
         self.contents = contents
@@ -49,7 +49,11 @@ extension Slice {
     public enum ContentType {
         case assetImage(name: String, preferences: ImagePreferences)
         case image(image: SFWImage, preferences: ImagePreferences)
-        case text(text: String, preferences: TextPreferences)
+        case text(text: String, preferences: TextPreferences = .default)
         case line(preferences: LinePreferences)
+        
+        public static func title(text: String, color: SFWColor) -> ContentType {
+            .text(text: text, preferences: .init(textColorType: .customPatternColors(defaultColor: color)))
+        }
     }
 }

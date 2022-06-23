@@ -13,10 +13,10 @@ import UIKit
 #endif
 
 /// Wheel view with slices.
-class WheelView: UIView {
+public class WheelView: UIView {
 
     /// Wheel layer
-    private(set) var wheelLayer: WheelLayer?
+    public var wheelLayer: WheelLayer?
 
     /// Customizable preferences.
     /// Required in order to draw properly.
@@ -29,7 +29,7 @@ class WheelView: UIView {
 
     /// List of Slice objects.
     /// Used to draw content.
-    var slices: [Slice] = [] {
+    public var slices: [Slice] = [] {
         didSet {
             wheelLayer?.slices = slices
             #if os(macOS)
@@ -45,7 +45,7 @@ class WheelView: UIView {
     ///   - frame: Frame
     ///   - slices: List of Slices
     ///   - configuration: Customizable configuration   
-    init(frame: CGRect, slices: [Slice], preferences: SFWConfiguration.WheelPreferences?) {
+    public init(frame: CGRect, slices: [Slice], preferences: SFWConfiguration.WheelPreferences?) {
         self.preferences = preferences
         self.slices = slices
         super.init(frame: frame)

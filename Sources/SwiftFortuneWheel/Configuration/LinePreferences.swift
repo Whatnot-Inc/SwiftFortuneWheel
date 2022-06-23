@@ -30,13 +30,16 @@ public struct LinePreferences {
     ///   - colorType: Line color type
     ///   - height: Stroke height, default value is `1`
     ///   - verticalOffset: Vertical offset in slice from the center, default value is `0`
-    public init(colorType: SFWConfiguration.ColorType,
+    public init(colorType: SFWConfiguration.ColorType = .customPatternColors(defaultColor: .black),
                 height: CGFloat = 1,
                 verticalOffset: CGFloat = 0) {
         self.colorType = colorType
         self.height = height
         self.verticalOffset = verticalOffset
     }
+    
+    
+    
 }
 
 extension LinePreferences {

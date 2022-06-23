@@ -325,7 +325,7 @@ public extension SFWConfiguration {
     /// `customPatternColors` - decorates with specified color for each item on the list.
     enum ColorType {
         case evenOddColors(evenColor: SFWColor, oddColor: SFWColor)
-        case customPatternColors(colors: [SFWColor]?, defaultColor: SFWColor)
+        case customPatternColors(colors: [SFWColor]? = nil, defaultColor: SFWColor)
     }
 }
 

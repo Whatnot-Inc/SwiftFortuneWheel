@@ -24,8 +24,5 @@ let package = Package(
         .target(
             name: "SwiftFortuneWheel",
             dependencies: []),
-        .testTarget(
-            name: "SwiftFortuneWheelTests",
-            dependencies: ["SwiftFortuneWheel"]),
     ]
 )

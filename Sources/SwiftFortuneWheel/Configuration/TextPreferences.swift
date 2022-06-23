@@ -59,12 +59,15 @@ public struct TextPreferences {
     ///   - font: Font
     ///   - verticalOffset: Vertical offset in slice from the center, default value is `0`
     public init(textColorType: SFWConfiguration.ColorType,
-                font: SFWFont,
+                font: SFWFont = UIFont.systemFont(ofSize: 12),
                 verticalOffset: CGFloat = 0) {
         self.textColorType = textColorType
         self.font = font
         self.verticalOffset = verticalOffset
+        self.orientation = .vertical
     }
+    
+    public static let `default`: TextPreferences = .init(textColorType: .customPatternColors(colors: nil, defaultColor: .black))
 }
 
 public extension TextPreferences {

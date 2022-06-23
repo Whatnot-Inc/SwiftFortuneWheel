@@ -31,6 +31,8 @@ public typealias SFWColor = UIColor
 public typealias SFWImage = UIImage
 public typealias SFWFont = UIFont
 public typealias SFWEdgeInsets = UIEdgeInsets
+
+
 #endif
 
 #if os(macOS)

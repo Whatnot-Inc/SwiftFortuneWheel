@@ -15,7 +15,7 @@ import UIKit
 #endif
 
 /// Wheel layer
-class WheelLayer: CALayer {
+public class WheelLayer: CALayer {
     
     /// Customizable preferences.
     /// Required in order to draw properly.
@@ -58,7 +58,7 @@ class WheelLayer: CALayer {
         updateSizes()
     }
     
-    override func draw(in ctx: CGContext) {
+    public override func draw(in ctx: CGContext) {
         super.draw(in: ctx)
         
         UIGraphicsPushContext(ctx)
@@ -66,7 +66,7 @@ class WheelLayer: CALayer {
         UIGraphicsPopContext()
     }
     
-    override var masksToBounds: Bool {
+    public override var masksToBounds: Bool {
         set {
             
         }
