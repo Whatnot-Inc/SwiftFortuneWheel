@@ -59,7 +59,7 @@ public struct TextPreferences {
     ///   - font: Font
     ///   - verticalOffset: Vertical offset in slice from the center, default value is `0`
     public init(textColorType: SFWConfiguration.ColorType,
-                font: SFWFont = UIFont.systemFont(ofSize: 12),
+                font: SFWFont = UIFont.systemFont(ofSize: 16),
                 verticalOffset: CGFloat = 0) {
         self.textColorType = textColorType
         self.font = font
