@@ -13,6 +13,7 @@ import UIKit
 #endif
 
 /// Customizable Fortune spinning wheel control written in Swift.
+@available(iOSApplicationExtension 10.0, *)
 public class SwiftFortuneWheel: SFWControl {
     
     /// Called when spin button tapped
@@ -125,7 +126,6 @@ public class SwiftFortuneWheel: SFWControl {
     /// Audio player manager, used for collision effects sound
     private(set) lazy var audioPlayerManager = AudioPlayerManager()
     
-    @available(iOS 10.0, *)
     private(set) lazy var impactFeedbackgenerator = UIImpactFeedbackGenerator(style: .light)
     
     /// Spin button title

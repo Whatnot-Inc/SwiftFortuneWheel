@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2703B4F4248E204E00FB50F9 /* SFWConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703B4F3248E204E00FB50F9 /* SFWConfiguration.swift */; };
-		270550A6255D4F9F008D331B /* MockSliceCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270550A2255D4F76008D331B /* MockSliceCalculation.swift */; };
-		270550AC255D501E008D331B /* MockWheelMathCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270550AB255D501E008D331B /* MockWheelMathCalculation.swift */; };
-		270550B1255D5104008D331B /* CalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270550B0255D5104008D331B /* CalculationTests.swift */; };
 		27105670248D4C93006C0181 /* TextPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27105653248D4C93006C0181 /* TextPreferences.swift */; };
 		27105671248D4C93006C0181 /* ImagePreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27105654248D4C93006C0181 /* ImagePreferences.swift */; };
 		27105673248D4C93006C0181 /* SliceDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27105658248D4C93006C0181 /* SliceDrawing.swift */; };
@@ -65,7 +62,6 @@
 		27F7D5BD24A5CB6A004BEE19 /* String+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F7D5BC24A5CB6A004BEE19 /* String+Split.swift */; };
 		27F7D5BF24A5F6B0004BEE19 /* String+Dots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F7D5BE24A5F6B0004BEE19 /* String+Dots.swift */; };
 		52D6D9871BEFF229002C0205 /* SwiftFortuneWheel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* SwiftFortuneWheel.framework */; };
-		8933C7901EB5B82D000D00A4 /* SwiftFortuneWheelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* SwiftFortuneWheelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +76,6 @@
 
 /* Begin PBXFileReference section */
 		2703B4F3248E204E00FB50F9 /* SFWConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWConfiguration.swift; sourceTree = "<group>"; };
-		270550A2255D4F76008D331B /* MockSliceCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSliceCalculation.swift; sourceTree = "<group>"; };
-		270550AB255D501E008D331B /* MockWheelMathCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWheelMathCalculation.swift; sourceTree = "<group>"; };
-		270550B0255D5104008D331B /* CalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationTests.swift; sourceTree = "<group>"; };
 		27105653248D4C93006C0181 /* TextPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextPreferences.swift; sourceTree = "<group>"; };
 		27105654248D4C93006C0181 /* ImagePreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreferences.swift; sourceTree = "<group>"; };
 		27105658248D4C93006C0181 /* SliceDrawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliceDrawing.swift; sourceTree = "<group>"; };
@@ -140,7 +133,6 @@
 		27F7D5BE24A5F6B0004BEE19 /* String+Dots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Dots.swift"; sourceTree = "<group>"; };
 		52D6D97C1BEFF229002C0205 /* SwiftFortuneWheel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFortuneWheel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* SwiftFortuneWheelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFortuneWheelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8933C7891EB5B82A000D00A4 /* SwiftFortuneWheelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFortuneWheelTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* SwiftFortuneWheel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SwiftFortuneWheel.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* SwiftFortuneWheelTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SwiftFortuneWheelTests.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,39 +156,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2705509F255D4F36008D331B /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				270550A0255D4F3D008D331B /* Calculating */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		270550A0255D4F3D008D331B /* Calculating */ = {
-			isa = PBXGroup;
-			children = (
-				270550A2255D4F76008D331B /* MockSliceCalculation.swift */,
-				270550AB255D501E008D331B /* MockWheelMathCalculation.swift */,
-			);
-			path = Calculating;
-			sourceTree = "<group>";
-		};
-		270550A1255D4F46008D331B /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				2705509F255D4F36008D331B /* Utils */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		270550AF255D50DD008D331B /* TestCases */ = {
-			isa = PBXGroup;
-			children = (
-				270550B0255D5104008D331B /* CalculationTests.swift */,
-			);
-			path = TestCases;
-			sourceTree = "<group>";
-		};
 		27105651248D4C93006C0181 /* SwiftFortuneWheel */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,7 +327,6 @@
 			children = (
 				272B62C224A46DBB00F19E41 /* Playgrounds */,
 				8933C7811EB5B7E0000D00A4 /* Sources */,
-				8933C7831EB5B7EB000D00A4 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
 				52D6D97D1BEFF229002C0205 /* Products */,
 			);
@@ -398,17 +356,6 @@
 				27105651248D4C93006C0181 /* SwiftFortuneWheel */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		8933C7831EB5B7EB000D00A4 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				270550AF255D50DD008D331B /* TestCases */,
-				270550A1255D4F46008D331B /* Mocks */,
-				8933C7891EB5B82A000D00A4 /* SwiftFortuneWheelTests.swift */,
-			);
-			name = Tests;
-			path = Tests/SwiftFortuneWheelTests;
 			sourceTree = "<group>";
 		};
 		DD7502721C68FC1B006590AF /* Frameworks */ = {
@@ -598,10 +545,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				270550AC255D501E008D331B /* MockWheelMathCalculation.swift in Sources */,
-				270550A6255D4F9F008D331B /* MockSliceCalculation.swift in Sources */,
-				8933C7901EB5B82D000D00A4 /* SwiftFortuneWheelTests.swift in Sources */,
-				270550B1255D5104008D331B /* CalculationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,7 +688,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Configs/SwiftFortuneWheel.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = NO;
@@ -775,7 +718,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Configs/SwiftFortuneWheel.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftFortuneWheel.SwiftFortuneWheel-iOS";
